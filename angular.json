@@ -27,9 +27,18 @@
               "src/assets"
             ],
             "styles": [
+              "node_modules/bootstrap/dist/css/bootstrap.min.css",
+              "src/assets/ArchivosExternos/boxicons/css/boxicons.min.css",
               "src/styles.css"
+
+
             ],
-            "scripts": []
+            "scripts": [
+            "node_modules/bootstrap/dist/js/bootstrap.bundle.min.js",
+            "src/assets/ArchivosExternos/waypoints/lib/noframework.waypoints.js",
+            "src/assets/ArchivosExternos/fontawesome/js/all.min.js"
+
+            ]
           },
           "configurations": {
             "production": {

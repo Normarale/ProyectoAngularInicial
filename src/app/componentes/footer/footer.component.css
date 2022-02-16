@@ -1,0 +1,11 @@
+/*--------------------------
+Seccion Footer
+---------------------------*/
+
+.pie {
+  text-align:center;
+  color:#040404;
+  background-color: rgba(255, 255, 255, 0.15);
+  color: rgb(161, 138, 138);
+  padding:10px;
+}

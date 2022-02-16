@@ -1,0 +1,46 @@
+
+
+/*--------------------------------------------------------------
+# Contact
+--------------------------------------------------------------*/
+.contacto .info-box {
+  color:#040404;
+  padding: 20px;
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.15);
+  border-radius: 55%;
+
+}
+.contacto .info-box{
+  font-size: 25px;
+  color: #d2188d;
+  padding: 1px;
+  float: left;
+
+}
+
+.contacto .info-box h3 {
+  font-size: 20px;
+  color: rgba(255, 255, 255, 0.5);
+  font-weight: 700;
+  margin: 10px 0 8px 68px;
+}
+.contacto .info-box p {
+  padding: 0;
+  color: #fff;
+  line-height: 24px;
+  font-size: 14px;
+  margin: 0 0 0 68px;
+  text-align: center;
+}
+.social-item {
+  font-size: 40px;
+  text-align: center;
+}
+.social-item a{
+  color:#fff;
+}
+.social-item a:hover {
+  background: #d2188d;
+  border-radius: 50%;
+}
