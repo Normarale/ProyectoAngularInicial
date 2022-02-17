@@ -59,7 +59,14 @@ h2, h3, h4, h5, h6 {
   background: #f12294fd;
   margin: 4px 10px;
 }
+.navbar-collapse{
+background-color: transparent;
+}
+.navbar-collapse.show {
 
+  background-color:rgba(04, 04, 04, 0.8);
+
+}
 
 
 /*----------------------------------------
