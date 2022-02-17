@@ -12,6 +12,8 @@ import { LoginComponent } from './componentes/login/login.component';
 import { FooterComponent } from './componentes/footer/footer.component';
 import { NabVarComponent } from './componentes/nab-var/nab-var.component';
 
+import { CargarSkilService } from './servicios/cargar-skil.service';
+
 
 @NgModule({
   declarations: [
@@ -29,7 +31,9 @@ import { NabVarComponent } from './componentes/nab-var/nab-var.component';
     BrowserModule,
     AppRoutingModule
   ],
-  providers: [],
+  providers: [
+    CargarSkilService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

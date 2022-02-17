@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 
+import { CargarSkilService } from 'src/app/servicios/cargar-skil.service';
+
 @Component({
   selector: 'app-acerca',
   templateUrl: './acerca.component.html',
@@ -7,11 +9,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class AcercaComponent implements OnInit {
 
-
-
-  constructor() { }
+  constructor(private _cargaSkill:CargarSkilService) {
+    _cargaSkill.carga(["/skil"]);
+   }
 
   ngOnInit(): void {
-  }
+
+   }
 
 }

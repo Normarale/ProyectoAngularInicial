@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
-declare const main: any;
+
+
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
@@ -8,7 +9,8 @@ declare const main: any;
 export class AppComponent {
   title = 'MyPortfolio';
 
-  ngAfterViewInit(): void {
-    main();
-   }
+
+
+
+
 }

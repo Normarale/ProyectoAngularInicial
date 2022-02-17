@@ -34,9 +34,10 @@
 
             ],
             "scripts": [
-            "node_modules/bootstrap/dist/js/bootstrap.bundle.min.js",
+
             "src/assets/ArchivosExternos/waypoints/lib/noframework.waypoints.js",
-            "src/assets/ArchivosExternos/fontawesome/js/all.min.js"
+            "src/assets/ArchivosExternos/fontawesome/js/all.min.js",
+            "src/assets/ArchivosExternos/bootstrap/js/bootstrap.bundle.min.js"
 
             ]
           },

@@ -1,41 +1,16 @@
 
-function main(){
-  // Agregar clase para no ocultar menu navegacion
-const menunav = document.querySelector('.navbar');
+function scripts(){
 
-window.onscroll = function() {
-    var top = window.scrollY;
-    if(top >= 100) {
-        menunav.classList.add('navbarDark')
-    }
-    else {
-        menunav.classList.remove('navbarDark');
-    }
-};
-  // collapse navbar after click on small devices
-const navLinks = document.querySelectorAll('.nav-item')
-const menuToggle = document.getElementById('navbarSupportedContent')
+  /*----------------------------
+   Ocultar menu hamburguesa
+  -----------------------------*/
+    let navLinks = document.querySelectorAll('.nav-item')
+    let menuToggle = document.getElementById('navbarTogglerMenu')
 
-navLinks.forEach((l) => {
-    l.addEventListener('click', () => { new bootstrap.Collapse(menuToggle).toggle() })
-})
-
-    /*---------------------------
-      Selector
-    ------------------------------ */
-    const select = (el, all = false) => {
-      el = el.trim()
-      if (all) {
-        return [...document.querySelectorAll(el)]
-      } else {
-        return document.querySelector(el)
-      }
-    };
+    navLinks.forEach((el) => {
+        el.addEventListener('click', () => { new bootstrap.Collapse(menuToggle).toggle() })
+    });
 
 
-    /*------------------------
-     Animacion para los Skills
-    ------------------------------*/
+}
 
-
-  }
