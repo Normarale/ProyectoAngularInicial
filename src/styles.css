@@ -27,7 +27,9 @@ h2, h3, h4, h5, h6 {
   font-family: "Raleway", sans-serif;
 }
 
-
+.navbar-collapse{
+  background-color: transparent;
+  }
 /*--------------------------------------------------------------
 # componentes General
 --------------------------------------------------------------*/
@@ -59,9 +61,7 @@ h2, h3, h4, h5, h6 {
   background: #f12294fd;
   margin: 4px 10px;
 }
-.navbar-collapse{
-background-color: transparent;
-}
+
 .navbar-collapse.show {
 
   background-color:rgba(04, 04, 04, 0.8);
@@ -115,7 +115,11 @@ background-color: transparent;
      transform: translate(0);
  }
 }
+.navbar-collapse.show {
 
+  background-color:rgba(04, 04, 04, 0.8);
+
+}
 
 /* -------------------------
     redes sociales menu ppal
