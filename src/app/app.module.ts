@@ -11,8 +11,13 @@ import { ContactoComponent } from './componentes/contacto/contacto.component';
 import { LoginComponent } from './componentes/login/login.component';
 import { FooterComponent } from './componentes/footer/footer.component';
 import { NabVarComponent } from './componentes/nab-var/nab-var.component';
+import { PortfolioComponent } from './componentes/portfolio/portfolio.component';
+
+
 
 import { CargarSkilService } from './servicios/cargar-skil.service';
+
+import { ReactiveFormsModule } from '@angular/forms';
 
 
 @NgModule({
@@ -25,11 +30,14 @@ import { CargarSkilService } from './servicios/cargar-skil.service';
    ContactoComponent,
    LoginComponent,
    FooterComponent,
-   NabVarComponent
+   NabVarComponent,
+   PortfolioComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    ReactiveFormsModule,
+    
   ],
   providers: [
     CargarSkilService

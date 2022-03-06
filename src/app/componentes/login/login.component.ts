@@ -1,15 +1,36 @@
 import { Component, OnInit } from '@angular/core';
-
+import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 @Component({
   selector: 'app-login',
   templateUrl: './login.component.html',
   styleUrls: ['./login.component.css']
 })
 export class LoginComponent implements OnInit {
+  form:FormGroup;
 
-  constructor() { }
+  constructor(private formBuilder:FormBuilder) {
+    this.form=this.formBuilder.group({
+      email:['', [Validators.required, Validators.email]],
+      password:['',[Validators.required, Validators.minLength(8)]],
+      deviceInfo:this.formBuilder.group({
+         deviceId:["17867868768"],
+         deviceType:["DEVICE_TYPE_ANDROID"],
+         token:["67657575eeceecc34"]
+      })
+    })
+   }
 
   ngOnInit(): void {
   }
+
+  //propiedades para obtener el email y el pasword
+  get Email(){
+    return this.form.get('email');
+  }
+
+  get Password(){
+    return this.form.get('password');
+  }
+
 
 }
