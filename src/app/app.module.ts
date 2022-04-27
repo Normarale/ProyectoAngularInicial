@@ -1,3 +1,4 @@
+
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
@@ -18,7 +19,8 @@ import { PortfolioComponent } from './componentes/portfolio/portfolio.component'
 import { CargarSkilService } from './servicios/cargar-skil.service';
 
 import { ReactiveFormsModule } from '@angular/forms';
-
+import { HttpClientModule, HttpInterceptor, HTTP_INTERCEPTORS } from '@angular/common/http';
+import { ProyectoComponent } from './componentes/proyecto/proyecto.component';
 
 @NgModule({
   declarations: [
@@ -31,16 +33,18 @@ import { ReactiveFormsModule } from '@angular/forms';
    LoginComponent,
    FooterComponent,
    NabVarComponent,
-   PortfolioComponent
+   PortfolioComponent,
+   ProyectoComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     ReactiveFormsModule,
-    
+    HttpClientModule
   ],
   providers: [
-    CargarSkilService
+    CargarSkilService,
+
   ],
   bootstrap: [AppComponent]
 })
