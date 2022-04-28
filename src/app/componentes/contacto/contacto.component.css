@@ -6,12 +6,9 @@
 .contacto .info-box {
   color:#040404;
   padding: 20px;
-  width: 100%;
+  width: 80%;
   background-color: rgba(255, 255, 255, 0.15);
-  border-radius: 55%;
-
-}
-.contacto .info-box{
+  border-radius: 10%;
   font-size: 25px;
   color: #d2188d;
   padding: 1px;
@@ -42,5 +39,5 @@
 }
 .social-item a:hover {
   background: #d2188d;
-  border-radius: 50%;
+  border-radius: 25%;
 }
